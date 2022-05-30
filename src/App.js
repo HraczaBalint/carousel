@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import './App.scss';
 import CarouselClass from './components/CarouselClass';
+import CarouselFunc from './components/CarouselFunc';
 
 const pictures = [
   '/img/skyrim/1.jpg',
@@ -31,7 +32,7 @@ function App() {
         value={time}
       />
       {
-        show ? <CarouselClass
+        show ? <CarouselFunc
         pictures={ login ? pictures2 : pictures}
         time={time}
         /> : null
