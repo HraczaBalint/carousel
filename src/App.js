@@ -32,6 +32,12 @@ function App() {
         value={time}
       />
       {
+        show ? <CarouselClass
+        pictures={ login ? pictures2 : pictures}
+        time={time}
+        /> : null
+      }
+      {
         show ? <CarouselFunc
         pictures={ login ? pictures2 : pictures}
         time={time}
